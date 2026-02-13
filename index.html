@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wise Words by SendOwl - Preview</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f4f4f4; min-height: 100vh; }
+
+  #gate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1a1a2e;
+  }
+  .gate-box {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 380px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  }
+  .gate-box h1 {
+    font-size: 22px;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+  }
+  .gate-box h1 span { color: #ff6b35; }
+  .gate-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+  }
+  .gate-box input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e8e8e8;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .gate-box input:focus { border-color: #ff6b35; }
+  .gate-box input.error { border-color: #dc3545; animation: shake 0.3s ease; }
+  .gate-box button {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+    background: #ff6b35;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .gate-box button:hover { background: #e55a2b; }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+  }
+
+  #content { display: none; }
+  #content iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+  }
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="gate-box">
+    <h1>Wise Words <span>by SendOwl</span></h1>
+    <p>Newsletter preview. Enter the password to view.</p>
+    <input type="password" id="pw" placeholder="Password" autofocus>
+    <button onclick="check()">View Preview</button>
+  </div>
+</div>
+
+<div id="content">
+  <iframe id="frame" src="about:blank"></iframe>
+</div>
+
+<script>
+  // Light client-side password gate
+  // This is NOT security - it's just a preview gate to keep casual visitors out
+  var h = "ef93b21758950a432872b922acaf7d381cd7a4d3c50013ffa7c4871fd257005c";
+
+  async function sha256(msg) {
+    var buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(msg));
+    return Array.from(new Uint8Array(buf)).map(function(b) { return b.toString(16).padStart(2, "0"); }).join("");
+  }
+
+  async function check() {
+    var input = document.getElementById("pw");
+    var digest = await sha256(input.value);
+    if (digest === h) {
+      document.getElementById("gate").style.display = "none";
+      document.getElementById("content").style.display = "block";
+      document.getElementById("frame").src = "newsletter-2026-02-16.html";
+    } else {
+      input.classList.add("error");
+      input.value = "";
+      input.placeholder = "Try again";
+      setTimeout(function() { input.classList.remove("error"); }, 600);
+    }
+  }
+
+  document.getElementById("pw").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") check();
+  });
+</script>
+
+</body>
+</html>
