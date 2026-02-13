@@ -1,19 +1,3 @@
-'use client'
-
-import { useState, useCallback } from 'react'
-
-const HASH = 'ef93b21758950a432872b922acaf7d381cd7a4d3c50013ffa7c4871fd257005c'
-
-async function sha256(msg: string): Promise<string> {
-  const buf = await crypto.subtle.digest(
-    'SHA-256',
-    new TextEncoder().encode(msg)
-  )
-  return Array.from(new Uint8Array(buf))
-    .map((b) => b.toString(16).padStart(2, '0'))
-    .join('')
-}
-
 function SendOwlLogo() {
   return (
     <svg width="344" height="108" viewBox="0 0 344 108" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,72 +8,19 @@ function SendOwlLogo() {
 }
 
 export default function Home() {
-  const [authenticated, setAuthenticated] = useState(false)
-  const [password, setPassword] = useState('')
-  const [error, setError] = useState(false)
-
-  const handleSubmit = useCallback(async () => {
-    const digest = await sha256(password)
-    if (digest === HASH) {
-      setAuthenticated(true)
-    } else {
-      setError(true)
-      setPassword('')
-      setTimeout(() => setError(false), 600)
-    }
-  }, [password])
-
-  if (authenticated) {
-    return (
-      <div className="preview-wrapper">
-        <div className="preview-header">
-          <div className="preview-header-left">
-            <SendOwlLogo />
-            <span className="preview-badge">Preview</span>
-          </div>
-          <button
-            className="preview-back"
-            onClick={() => setAuthenticated(false)}
-          >
-            Lock
-          </button>
-        </div>
-        <iframe
-          className="preview-iframe"
-          src="/newsletter-2026-02-16.html"
-          title="Wise Words by SendOwl - Feb 16, 2026"
-        />
-      </div>
-    )
-  }
-
   return (
-    <div className="gate">
-      <div className="gate-logo">
-        <SendOwlLogo />
-      </div>
-      <div className="gate-card">
-        <span className="issue-tag">February 16, 2026</span>
-        <h1>Wise Words</h1>
-        <p className="subtitle">Newsletter preview. Enter the password to view.</p>
-        <input
-          className={`gate-input${error ? ' error' : ''}`}
-          type="password"
-          placeholder={error ? 'Try again' : 'Password'}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') handleSubmit()
-          }}
-          autoFocus
-        />
-        <button className="gate-button" onClick={handleSubmit}>
-          View Preview
-        </button>
-        <div className="gate-footer">
-          <a href="https://www.sendowl.com">sendowl.com</a>
+    <div className="preview-wrapper">
+      <div className="preview-header">
+        <div className="preview-header-left">
+          <SendOwlLogo />
+          <span className="preview-badge">Preview</span>
         </div>
       </div>
+      <iframe
+        className="preview-iframe"
+        src="/newsletter-2026-02-16.html"
+        title="Wise Words by SendOwl - Feb 16, 2026"
+      />
     </div>
   )
 }
