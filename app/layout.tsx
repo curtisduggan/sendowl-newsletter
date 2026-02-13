@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Wise Words by SendOwl',
-  description: 'Newsletter preview for Wise Words by SendOwl',
+  description: 'Wise Words by SendOwl - Newsletter Preview',
 }
 
 export default function RootLayout({
