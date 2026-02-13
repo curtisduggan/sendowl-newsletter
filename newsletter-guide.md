@@ -364,6 +364,7 @@ These patterns are instantly recognizable as AI-generated or generic content mar
 - [ ] Verify emoji usage is limited to section headers and subject line only
 - [ ] Confirm section word counts match targets
 - [ ] Test the three reading speeds: scanner (30s), skimmer (3min), deep reader (7min)
+- [ ] **Link check: Every person, brand, or blog post mentioned must link out.** If Dani references something she wrote, link to the blog post. If a seller or business is named, link to their SendOwl seller story or their website. No naked name drops without a link.
 
 **Step 4: Build in Klaviyo**
 - [ ] Paste content into the HTML template
