@@ -18,8 +18,8 @@ export default function Home() {
       </div>
       <iframe
         className="preview-iframe"
-        src="/newsletter-2026-02-16.html"
-        title="Wise Words by SendOwl - Feb 16, 2026"
+        src="/newsletter-2026-02-19.html"
+        title="Wise Words by SendOwl - Feb 19, 2026"
       />
     </div>
   )
