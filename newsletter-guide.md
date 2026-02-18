@@ -24,6 +24,7 @@ This is shorter than most operator newsletters by design. SendOwl's audience is 
 - **The Deep Dive** = the core value (reason to subscribe)
 - **Quick Wins** = the scanner path (30-second read option for busy days)
 - **Seller Spotlight** = emotional connection (real people, real stories, aspiration)
+- **Creator Economy News** = the industry pulse (keeps readers informed, positions Dani as plugged-in)
 - **The Link Stash** = variable reward at the bottom (trains readers to scroll all the way down)
 - **The Closer** = the dessert (the shareable line people screenshot)
 
@@ -42,9 +43,10 @@ Every issue follows this section order. Sections marked **Required** appear in e
 | E | **Seller Spotlight** | Required | 200-300 words | A real SendOwl creator's story. The emotional heart. |
 | F | **Quick Wins** | Required | 150-200 words | 3 sharp, practical tips. Bold headline + 1-2 sentences each. |
 | G | **What's New at SendOwl** | Optional | 100-150 words | Product updates, blog links. Only when worth sharing. |
-| H | **The Link Stash** | Required | ~100 words | 4-5 curated links. The treasure hunt that rewards scrolling. |
-| I | **The Closer** | Required | 1-2 sentences | A quotable line, provocative question, or surprising fact. |
-| J | **Footer** | Required | ~60 words | About SendOwl, unsubscribe, links |
+| H | **Creator Economy News** | Required | ~100 words | 3-4 timely news items about the creator economy. The industry pulse. |
+| I | **The Link Stash** | Required | ~100 words | 4-5 curated links. The treasure hunt that rewards scrolling. |
+| J | **The Closer** | Required | 1-2 sentences | A quotable line, provocative question, or surprising fact. |
+| K | **Footer** | Required | ~60 words | About SendOwl, unsubscribe, links |
 
 ### Section Details
 
@@ -103,7 +105,16 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Never filler. If there's nothing to share, skip the section.
 - Use a section emoji: **&#128230;** (package, consistent across issues)
 
-#### H. The Link Stash
+#### H. Creator Economy News
+- 3-4 timely news items about the creator economy, platforms, and AI developments affecting creators.
+- Each item: bold title link + 1-2 sentence description.
+- Focus on: platform changes (YouTube, TikTok, Substack, etc.), AI and creators, market data/reports, policy/regulation affecting creators.
+- Must be current and up-to-date. No stale news. Source from industry reports, tech press, platform announcements.
+- Distinct from The Link Stash: this section is newsy and timely, Link Stash is curated and more evergreen.
+- Use a section emoji: **&#128240;** (newspaper, consistent across issues)
+- **Prompt for Claude**: "Find 3-4 creator economy news items from the past 1-2 weeks. Focus on platform changes, AI developments, and market data relevant to digital product creators. Each needs a bold title link and 1-2 sentences."
+
+#### I. The Link Stash
 - 4-5 curated links: mix of SendOwl blog posts and external articles.
 - Each link: bold title + 1-sentence description.
 - At least 2 SendOwl blog links, 2-3 external.
@@ -111,7 +122,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Use a section emoji: **&#128279;** (link, consistent across issues)
 - **Prompt for Claude**: "Curate 5 links for The Link Stash. Include [these SendOwl blog posts] and find 2-3 external links about [topic]. Each needs a bold title and one sentence."
 
-#### I. The Closer
+#### J. The Closer
 - 1-2 sentences maximum.
 - Should be quotable: the kind of line someone screenshots and shares.
 - Often reframes a theme from the issue in a memorable, unexpected way.
@@ -119,7 +130,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Use a section emoji: **&#127922;** (microphone, consistent across issues)
 - **Prompt for Claude**: "Write 3 Closer options for this issue. Theme: [X]. Each should be 1-2 sentences and quotable. Think 'the line someone would text to a friend.'"
 
-#### J. Footer
+#### K. Footer
 - "Wise Words by SendOwl" header
 - 2 sentences about SendOwl: "SendOwl helps creators sell digital products directly to their audience. No marketplace fees, no middlemen, just you and your customers."
 - Links: sendowl.com, Blog, Twitter/X
