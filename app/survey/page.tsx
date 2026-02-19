@@ -509,7 +509,6 @@ function PhilosophyTab() {
     <div className={styles.tabContent}>
       <div className={styles.surveyHeader}>
         <h2>What Changed and Why</h2>
-        <p className={styles.subtitle}>Every cut, merge, and change with the reasoning</p>
       </div>
 
       <div className={styles.philoSection}>
