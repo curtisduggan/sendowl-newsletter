@@ -518,14 +518,14 @@ function PhilosophyTab() {
       </div>
 
       <div className={styles.philoSection}>
-        <h3>What we cut</h3>
+        <h3>What was cut</h3>
 
         <div className={styles.changeCard}>
           <div className={styles.changeHeader}>
             <span className={styles.changeType}>Removed</span>
             <span>&ldquo;What is the single biggest use of your time outside of creating content?&rdquo;</span>
           </div>
-          <p>Overlaps with both the &ldquo;automate&rdquo; question and the &ldquo;dread&rdquo; question. We were asking the same thing three ways. The &ldquo;automate&rdquo; question tells us what to build, the &ldquo;dread&rdquo; question tells us the emotional weight. This one was the weakest of the three.</p>
+          <p>Overlaps with both the &ldquo;automate&rdquo; question and the &ldquo;dread&rdquo; question. Same thing asked three ways. The &ldquo;automate&rdquo; question tells us what to build, the &ldquo;dread&rdquo; question tells us the emotional weight. This one was the weakest of the three.</p>
         </div>
 
         <div className={styles.changeCard}>
@@ -538,19 +538,19 @@ function PhilosophyTab() {
       </div>
 
       <div className={styles.philoSection}>
-        <h3>What we merged</h3>
+        <h3>What was merged</h3>
 
         <div className={styles.changeCard}>
           <div className={styles.changeHeader}>
             <span className={styles.changeType}>Merged</span>
             <span>&ldquo;Partner coordination&rdquo; + &ldquo;Team coordination&rdquo; into one &ldquo;Coordination&rdquo; line</span>
           </div>
-          <p>For most creators the distinction between coordinating with brands vs. team vs. meetings is blurry. One combined line captures the same insight. If we need to split them later, we can.</p>
+          <p>For most creators the distinction between coordinating with brands vs. team vs. meetings is blurry. One combined line captures the same insight. Can always split them later if needed.</p>
         </div>
       </div>
 
       <div className={styles.philoSection}>
-        <h3>What we changed</h3>
+        <h3>What was changed</h3>
 
         <div className={styles.changeCard}>
           <div className={styles.changeHeader}>
@@ -573,12 +573,12 @@ function PhilosophyTab() {
             <span className={styles.changeType}>Changed</span>
             <span>Revenue + Platform questions from multicheck to force-rank top 3</span>
           </div>
-          <p>Multicheck (&ldquo;select all that apply&rdquo;) gives noisy data. Everyone checks 4-5 things and we can&apos;t tell what matters most. Force-ranking top 3 gives us prioritized signal and is faster for the user.</p>
+          <p>Multicheck (&ldquo;select all that apply&rdquo;) gives noisy data. Everyone checks 4-5 things and you can&apos;t tell what matters most. Force-ranking top 3 gives us prioritized signal and is faster for the user.</p>
         </div>
       </div>
 
       <div className={styles.philoSection}>
-        <h3>What stayed</h3>
+        <h3>What stayed the same</h3>
         <p>The ownership matrix in Part 4, the open-ended wrap-up, and both free-response questions in Part 2. These are the highest-signal parts of the survey.</p>
       </div>
 
