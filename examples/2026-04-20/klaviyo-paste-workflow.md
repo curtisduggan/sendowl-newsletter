@@ -6,7 +6,7 @@
 
 Two images need to be hosted on Klaviyo's server. This doc splits the HTML at each image so you can paste → upload → paste → upload → paste in sequence.
 
-**TL;DR if you'd rather do it in one shot:** paste the full HTML from `newsletter-2026-04-20-issue3.html`, upload both images to Klaviyo's image library, then find-and-replace `KLAVIYO_CAN_LOGO_URL` and `KLAVIYO_FF_GUARDIANS_URL` with the two Klaviyo CDN URLs. Same result, fewer steps. The chunked workflow below is for the "build in the drag-and-drop editor" flow.
+**TL;DR if you'd rather do it in one shot:** paste the full HTML from `newsletter-2026-04-20-final.html`, upload both images to Klaviyo's image library, then find-and-replace `KLAVIYO_CAN_LOGO_URL` and `KLAVIYO_FF_GUARDIANS_URL` with the two Klaviyo CDN URLs. Same result, fewer steps. The chunked workflow below is for the "build in the drag-and-drop editor" flow.
 
 ---
 
@@ -14,8 +14,8 @@ Two images need to be hosted on Klaviyo's server. This doc splits the HTML at ea
 
 | # | Purpose | Local file | Dimensions | Size | Alt text |
 |---|---|---|---|---|---|
-| 1 | CAN section hero | `drafts/images/can-logo-primary.jpg` | 600 × 341 | 57 KB | Creator Access Network logo |
-| 2 | Seller Spotlight hero | `drafts/images/ff-union-guardians-kickstarter.jpg` | ~750 × 386 | 66 KB | The Guardians of the Crystal Kickstarter book by Final Fantasy Union |
+| 1 | CAN section hero | `examples/2026-04-20/images/can-logo-primary.jpg` | 600 × 341 | 57 KB | Creator Access Network logo |
+| 2 | Seller Spotlight hero | `examples/2026-04-20/images/ff-union-guardians-kickstarter.jpg` | ~750 × 386 | 66 KB | The Guardians of the Crystal Kickstarter book by Final Fantasy Union |
 
 Both files are already sized for email (under 100 KB, 600–750 px wide). Upload directly — no further resizing needed.
 
@@ -189,7 +189,7 @@ Paste everything inside the code block below into Klaviyo's HTML block (or the f
 # STEP 2 — Upload Image 1 (CAN logo) to Klaviyo
 
 1. In Klaviyo, open **Content → Images** (or the image picker in the current template).
-2. Upload `/Users/crd/ai-for-clients/send-owl/sendowl-newsletter/drafts/images/can-logo-primary.jpg`.
+2. Upload `examples/2026-04-20/images/can-logo-primary.jpg`.
 3. Copy the resulting Klaviyo CDN URL (looks like `https://d3k81ch9hvuctc.cloudfront.net/company/XXXXX/images/XXXXX.jpeg`).
 4. Verify the URL loads in a new browser tab before moving on.
 5. Paste that URL in place of `PASTE_KLAVIYO_CAN_URL_HERE` in the HTML chunk below.
@@ -320,7 +320,7 @@ Continue pasting in the same HTML block. Replace the placeholder `PASTE_KLAVIYO_
 # STEP 4 — Upload Image 2 (FF Union Guardians) to Klaviyo
 
 1. In Klaviyo, open **Content → Images** again.
-2. Upload `/Users/crd/ai-for-clients/send-owl/sendowl-newsletter/drafts/images/ff-union-guardians-kickstarter.jpg`.
+2. Upload `examples/2026-04-20/images/ff-union-guardians-kickstarter.jpg`.
 3. Copy the resulting Klaviyo CDN URL.
 4. Verify the URL loads in a new browser tab before moving on.
 5. Paste that URL in place of `PASTE_KLAVIYO_FF_URL_HERE` in the HTML chunk below.
@@ -605,10 +605,10 @@ Before scheduling or sending, run through this checklist:
 
 # Reference — Source files
 
-- **Full HTML (authoritative):** `sendowl-newsletter/drafts/newsletter-2026-04-20-issue3.html`
-- **Markdown (authoritative):** `sendowl-newsletter/drafts/newsletter-2026-04-20-issue3.md`
-- **CAN logo (local):** `sendowl-newsletter/drafts/images/can-logo-primary.jpg` (600 × 341, 57 KB)
-- **FF Union Guardians (local):** `sendowl-newsletter/drafts/images/ff-union-guardians-kickstarter.jpg` (66 KB)
+- **Full HTML (authoritative):** `examples/2026-04-20/newsletter-2026-04-20-final.html`
+- **Markdown (authoritative):** `examples/2026-04-20/newsletter-2026-04-20-final.md`
+- **CAN logo (local):** `sendowl-newsletter/examples/2026-04-20/images/can-logo-primary.jpg` (600 × 341, 57 KB)
+- **FF Union Guardians (local):** `sendowl-newsletter/examples/2026-04-20/images/ff-union-guardians-kickstarter.jpg` (66 KB)
 - **CAN logo originals (unresized):** `sendowl-newsletter/assets/can/` (5 brand variants)
-- **Update memo:** `sendowl-newsletter/drafts/issue3-update-memo.md`
-- **Klaviyo checklist:** `sendowl-newsletter/drafts/newsletter-2026-04-20-issue3-klaviyo-checklist.md`
+- **Update memo:** `examples/2026-04-20/issue3-update-memo.md`
+- **Klaviyo checklist:** `examples/2026-04-20/klaviyo-checklist.md`

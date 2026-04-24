@@ -227,7 +227,7 @@ You know your audience best. Lead with what will resonate and how this fits into
 
 ## Stage 5: CAN Brand Assets (logos)
 
-**Location**: `/Users/crd/ai-for-clients/send-owl/sendowl-newsletter/assets/can/`
+**Location**: `examples/2026-04-20/images/`
 
 **Files** (originals, not optimized):
 

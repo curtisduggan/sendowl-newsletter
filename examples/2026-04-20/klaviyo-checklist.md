@@ -1,12 +1,12 @@
 # Klaviyo Upload Checklist: Wise Words Issue #3 (April 20, 2026)
 
-Use this as a copy-paste runbook when you're ready to load the issue into Klaviyo. Everything you need is in this `drafts/` folder.
+Use this as a copy-paste runbook when you're ready to load the issue into Klaviyo. Everything you need is in this example folder.
 
 ## Files
 
-- **HTML** (paste into Klaviyo): `newsletter-2026-04-20-issue3.html`
-- **Markdown** (for reference only, not for upload): `newsletter-2026-04-20-issue3.md`
-- **Seller spotlight image**: `images/ff-union-guardians-kickstarter.jpg` (600×308, 65 KB)
+- **HTML** (paste into Klaviyo): `newsletter-2026-04-20-final.html`
+- **Markdown** (for reference only, not for upload): `newsletter-2026-04-20-final.md`
+- **Seller spotlight image**: `examples/2026-04-20/images/ff-union-guardians-kickstarter.jpg` (600×308, 65 KB)
 
 ## 1. Subject line and preview text
 
@@ -31,7 +31,7 @@ Preview text is already inlined as a hidden preheader at the top of the HTML (fi
 
 ## 3. Paste the HTML
 
-1. Open `newsletter-2026-04-20-issue3.html` in a text editor
+1. Open `newsletter-2026-04-20-final.html` in a text editor
 2. Select all (Cmd+A) and copy
 3. In Klaviyo's Custom HTML editor, paste into the HTML source view
 4. Klaviyo will automatically inline the `<style>` block. That's expected.
@@ -39,13 +39,13 @@ Preview text is already inlined as a hidden preheader at the top of the HTML (fi
 ## 4. Upload the seller spotlight image
 
 1. In Klaviyo, go to Content → Images
-2. Upload `images/ff-union-guardians-kickstarter.jpg`
+2. Upload `examples/2026-04-20/images/ff-union-guardians-kickstarter.jpg`
 3. Copy the Klaviyo-hosted URL (e.g., `https://d3k81ch9hvuctc.cloudfront.net/company/...`)
 4. Back in the Custom HTML editor, find this line:
    ```
-   <img src="images/ff-union-guardians-kickstarter.jpg" alt="The Guardians of the Crystal Kickstarter book by Final Fantasy Union"
+   <img src="KLAVIYO_FF_GUARDIANS_URL" alt="The Guardians of the Crystal Kickstarter book by Final Fantasy Union"
    ```
-5. Replace `images/ff-union-guardians-kickstarter.jpg` with the Klaviyo-hosted URL
+5. Replace `KLAVIYO_FF_GUARDIANS_URL` with the Klaviyo-hosted URL
 
 **Do not hotlink from the SendOwl blog's Ghost CDN in production.** Email clients block external images aggressively. Klaviyo's CDN is the right host.
 

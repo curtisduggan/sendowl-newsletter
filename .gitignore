@@ -1,8 +1,5 @@
 .DS_Store
 .claude/
-pascal-newsletter/
-sendowl-tweets copy/
-INSPOONLYLmarketing-site/
 
 # Next.js
 node_modules/

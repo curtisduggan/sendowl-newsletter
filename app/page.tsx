@@ -7,19 +7,52 @@ function SendOwlLogo() {
   )
 }
 
+const newsletters = [
+  {
+    date: 'Apr 20, 2026',
+    title: 'Wise Words by SendOwl - Apr 20, 2026',
+    path: '/newsletters/newsletter-2026-04-20.html',
+  },
+  {
+    date: 'Mar 26, 2026',
+    title: 'Wise Words by SendOwl - Mar 26, 2026',
+    path: '/newsletters/newsletter-2026-03-26.html',
+  },
+  {
+    date: 'Feb 19, 2026',
+    title: 'Wise Words by SendOwl - Feb 19, 2026',
+    path: '/newsletters/newsletter-2026-02-19.html',
+  },
+]
+
 export default function Home() {
+  const latest = newsletters[0]
+
   return (
     <div className="preview-wrapper">
       <div className="preview-header">
         <div className="preview-header-left">
           <SendOwlLogo />
-          <span className="preview-badge">Preview</span>
+          <span className="preview-badge">Latest preview</span>
+        </div>
+        <nav className="preview-nav" aria-label="Archived newsletters">
+          {newsletters.map((newsletter) => (
+            <a key={newsletter.path} href={newsletter.path}>
+              {newsletter.date}
+            </a>
+          ))}
+        </nav>
+      </div>
+      <div className="preview-titlebar">
+        <div>
+          <span className="preview-label">Current archive</span>
+          <h1>{latest.title}</h1>
         </div>
       </div>
       <iframe
         className="preview-iframe"
-        src="/newsletter-2026-02-19.html"
-        title="Wise Words by SendOwl - Feb 19, 2026"
+        src={latest.path}
+        title={latest.title}
       />
     </div>
   )

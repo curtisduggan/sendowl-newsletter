@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "copy:newsletter": "node scripts/copy-newsletter.mjs"
   },
   "dependencies": {
     "next": "^16.1.6",

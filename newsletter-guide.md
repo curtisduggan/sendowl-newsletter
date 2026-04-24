@@ -1,8 +1,10 @@
 # Wise Words by SendOwl: Voice, Structure & Production Playbook
 
-This guide is for producing Wise Words by SendOwl, a recurring newsletter from SendOwl in the voice of Dani Zacarias (GM). It ships on Klaviyo, goes out every Monday, and is designed for digital product creators who check email between tasks.
+This guide is for producing Wise Words by SendOwl, a recurring newsletter from SendOwl. It ships through Klaviyo, is produced monthly, and is designed for digital product creators who check email between tasks.
 
-You and Claude will collaborate on each issue. Your job is to provide the raw inputs (seller stories, product updates, blog posts, industry links). Claude's job is to draft sections, maintain consistency with this guide, and catch voice violations. Think of it as a writing partnership: you bring the substance, Claude brings the structure and first drafts.
+The current byline convention is **the SendOwl team**. Earlier issues used Dani Zacarias's first-person voice, and this guide preserves those voice rules because they still define the newsletter's warmth and directness. When writing as the team, keep the same plainspoken style, but use "we" for SendOwl and avoid pretending the note is personally from Dani.
+
+You can collaborate with an AI assistant on each issue. Your job is to provide the raw inputs: seller stories, product updates, blog posts, industry links, and any campaign priorities. The assistant's job is to draft sections, maintain consistency with this guide, and catch voice violations. You are still responsible for facts, links, final judgment, and Klaviyo setup.
 
 ---
 
@@ -38,7 +40,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 |-------|-------------|-----------|---------------|---------|
 | A | **Header** | Required | n/a | Brand recognition, issue date |
 | B | **The Number** | Required | 1-2 sentences | One stat about digital products that makes you stop and think |
-| C | **Hey, it's Dani** | Required | 80-120 words | Personal, sets the theme, previews the issue |
+| C | **Opening Note** | Required | 80-120 words | Personal, sets the theme, previews the issue |
 | D | **The Deep Dive** | Required | 400-600 words | One topic, fully explored. The reason to subscribe. |
 | E | **Seller Spotlight** | Required | 200-300 words | A real SendOwl creator's story. The emotional heart. |
 | F | **Quick Wins** | Required | 150-200 words | 3 sharp, practical tips. Bold headline + 1-2 sentences each. |
@@ -62,16 +64,17 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Format: the number in large text, followed by 1-2 sentences of context.
 - Sources: SendOwl data, seller stories, industry reports, tweet content.
 - Use a section emoji: **#** (consistent across issues)
-- **Prompt for Claude**: "Write 3 options for The Number. Each should be a single stat that makes a digital product creator stop scrolling. Include 1-2 sentences of context. Source from [this week's content]."
+- **Prompt for AI assistant**: "Write 3 options for The Number. Each should be a single stat that makes a digital product creator stop scrolling. Include 1-2 sentences of context. Source from [this week's content]."
 
-#### C. Hey, it's Dani
+#### C. Opening Note
 - 2-4 short paragraphs.
-- Starts with "Hey, it's Dani." (no emoji, no wave, just the name)
+- Current default: starts with "Hey, it's the SendOwl team!".
+- Legacy Dani-led issues started with "Hey, it's Dani." Keep those examples as voice references, not as the default byline.
 - Sets the issue theme without being a table of contents.
 - Should feel like a note from a friend who texts you interesting things, not a CEO writing a company update.
 - Can briefly preview what's in the issue in the final paragraph.
 - Use a section emoji: **&#9993;** (envelope, consistent across issues)
-- **Prompt for Claude**: "Write an opening note for this issue in Dani's voice. The theme is [X]. Start with a personal hook. Keep it under 120 words."
+- **Prompt for AI assistant**: "Write an opening note for this issue in the SendOwl team voice. The theme is [X]. Start with a specific hook. Keep it under 120 words."
 
 #### D. The Deep Dive
 - One idea, fully explored with stories and specifics.
@@ -81,7 +84,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Closes with an observation or forward-looking statement (not a rhetorical question every time).
 - Should include a concrete takeaway the reader can apply.
 - Use a section emoji: **&#128269;** (magnifying glass, consistent across issues)
-- **Prompt for Claude**: "Write a Deep Dive based on [topic]. Source material: [paste tweets/blog content]. One concept, 400-600 words. Open with a story or stat, include a bold key insight, close with a takeaway."
+- **Prompt for AI assistant**: "Write a Deep Dive based on [topic]. Source material: [paste tweets/blog content]. One concept, 400-600 words. Open with a story or stat, include a bold key insight, close with a takeaway."
 
 #### E. Seller Spotlight
 - Opens with the most compelling detail from the seller's story (not a bio).
@@ -89,7 +92,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Specific details: names, products, numbers, turning points.
 - End with something the reader can take away or aspire to.
 - Use a section emoji: **&#127775;** (star, consistent across issues)
-- **Prompt for Claude**: "Write a Seller Spotlight for [name] from [business]. Lead with the most surprising detail. Here are the source tweets and blog content: [paste]. Include specific numbers and quotes. 200-300 words."
+- **Prompt for AI assistant**: "Write a Seller Spotlight for [name] from [business]. Lead with the most surprising detail. Here are the source tweets and blog content: [paste]. Include specific numbers and quotes. 200-300 words."
 
 #### F. Quick Wins
 - Exactly 3 tips per issue. No more, no fewer.
@@ -97,7 +100,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Tips should be actionable within a day, not strategic advice.
 - Pull from tweet advice content, blog tips, and seller stories.
 - Use a section emoji: **&#9889;** (lightning bolt, consistent across issues)
-- **Prompt for Claude**: "Write 3 Quick Wins from this week's content: [paste]. Each needs a bold headline and 1-2 sentences. They should be actionable today, not strategic."
+- **Prompt for AI assistant**: "Write 3 Quick Wins from this week's content: [paste]. Each needs a bold headline and 1-2 sentences. They should be actionable today, not strategic."
 
 #### G. What's New at SendOwl (Optional)
 - Only include when there's a real product update, blog post, or announcement worth sharing.
@@ -112,7 +115,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Must be current and up-to-date. No stale news. Source from industry reports, tech press, platform announcements.
 - Distinct from The Link Stash: this section is newsy and timely, Link Stash is curated and more evergreen.
 - Use a section emoji: **&#128240;** (newspaper, consistent across issues)
-- **Prompt for Claude**: "Find 3-4 creator economy news items from the past 1-2 weeks. Focus on platform changes, AI developments, and market data relevant to digital product creators. Each needs a bold title link and 1-2 sentences."
+- **Prompt for AI assistant**: "Find 3-4 creator economy news items from the past 1-2 weeks. Focus on platform changes, AI developments, and market data relevant to digital product creators. Each needs a bold title link and 1-2 sentences."
 
 #### I. The Link Stash
 - 4-5 curated links: mix of SendOwl blog posts and external articles.
@@ -120,7 +123,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - At least 2 SendOwl blog links, 2-3 external.
 - External links should be genuinely useful (tools, articles, threads), not filler.
 - Use a section emoji: **&#128279;** (link, consistent across issues)
-- **Prompt for Claude**: "Curate 5 links for The Link Stash. Include [these SendOwl blog posts] and find 2-3 external links about [topic]. Each needs a bold title and one sentence."
+- **Prompt for AI assistant**: "Curate 5 links for The Link Stash. Include [these SendOwl blog posts] and find 2-3 external links about [topic]. Each needs a bold title and one sentence."
 
 #### J. The Closer
 - 1-2 sentences maximum.
@@ -128,7 +131,7 @@ Every issue follows this section order. Sections marked **Required** appear in e
 - Often reframes a theme from the issue in a memorable, unexpected way.
 - Can be a provocative question, surprising fact, or sharp observation.
 - Use a section emoji: **&#127922;** (microphone, consistent across issues)
-- **Prompt for Claude**: "Write 3 Closer options for this issue. Theme: [X]. Each should be 1-2 sentences and quotable. Think 'the line someone would text to a friend.'"
+- **Prompt for AI assistant**: "Write 3 Closer options for this issue. Theme: [X]. Each should be 1-2 sentences and quotable. Think 'the line someone would text to a friend.'"
 
 #### K. Footer
 - "Wise Words by SendOwl" header
@@ -158,7 +161,7 @@ Dani's voice is warm, direct, and grounded in the real experiences of SendOwl's 
 
 ### Punctuation Rules
 
-- **No em dashes.** Never use the em dash character (---). Claude defaults to em dashes frequently, so search every draft for "---" and replace every instance.
+- **No em dashes.** Never use the em dash character (---). AI assistant defaults to em dashes frequently, so search every draft for "---" and replace every instance.
 - Instead, use:
   - **Periods.** Break into two sentences. This is the default choice.
   - **Colons.** When introducing a list, explanation, or payoff.
@@ -175,7 +178,7 @@ Dani's voice is warm, direct, and grounded in the real experiences of SendOwl's 
 | "the creators who are winning --- community builders, coaches, specialists" | "the creators who are winning: community builders, coaches, specialists" |
 | "she runs a real LLC --- with real tax obligations" | "she runs a real LLC (with real tax obligations)" |
 
-**When reviewing Claude's drafts, search the entire document for "---" and replace every instance.**
+**When reviewing AI assistant's drafts, search the entire document for "---" and replace every instance.**
 
 ### Emoji Usage
 
@@ -339,60 +342,69 @@ These patterns are instantly recognizable as AI-generated or generic content mar
 
 ---
 
-## 7. Production Checklist
+## 7. Monthly Production Checklist
 
-### Timeline
+### Folder Conventions
 
-| Day | Task |
-|-----|------|
-| Wednesday | Identify content: strongest tweets, blog posts, seller story for spotlight |
-| Thursday | Draft all sections with Claude. Download and optimize images. |
-| Friday | Review voice, check for em dashes, verify banned patterns. |
-| Saturday | Final polish. Upload to Klaviyo. Send test email. |
-| Monday | Published. Share on social. |
+- Final sent HTML lives in `public/newsletters/newsletter-YYYY-MM-DD.html`.
+- Working examples live in `examples/YYYY-MM-DD/`.
+- The reusable template lives at `public/newsletter-template.html`.
+- Local preview images live in `public/images/`; production email images should be uploaded to Klaviyo.
 
-### Step-by-Step Production Process
+### Monthly Workflow
 
-**Step 1: Gather content**
-- [ ] Identify the week's strongest seller story for Spotlight
-- [ ] Pick a Deep Dive topic from tweet threads or blog content
-- [ ] Pull 3 Quick Win tips from tweets
-- [ ] Find a striking stat for The Number
-- [ ] Check for product updates (What's New section)
-- [ ] Curate 4-5 links for Link Stash
-- [ ] Download seller photos from blog to `images/` folder
+**Step 1: Gather inputs**
+- [ ] Identify the strongest seller story for Spotlight.
+- [ ] Pick one Deep Dive topic from tweet threads, blog content, or a current SendOwl priority.
+- [ ] Pull 3 Quick Win tips.
+- [ ] Find one striking stat for The Number.
+- [ ] Check for real product updates. Skip What's New if there is no meaningful update.
+- [ ] Curate 4-5 links for Link Stash, with at least 2 SendOwl links.
+- [ ] Find 3-4 current creator economy news items from the last 1-2 weeks.
 
-**Step 2: Draft with Claude**
-- [ ] Draft each section using the prompts in Section Details above
-- [ ] Review each draft for voice, accuracy, and em dashes
-- [ ] Assemble the full issue in section order (A through J)
+**Step 2: Draft in the repo**
+- [ ] Draft each section using the prompts in this guide.
+- [ ] If using Claude Code, ask it to create the draft as a file in `examples/YYYY-MM-DD/`.
+- [ ] Use the SendOwl team byline unless there is an explicit reason to write as Dani.
+- [ ] Assemble the full issue in section order.
+- [ ] Save the working Markdown in `examples/YYYY-MM-DD/`.
 
-**Step 3: Review voice**
-- [ ] Read every paragraph aloud. Does it sound like Dani or like a blog?
-- [ ] Check paragraph length: none longer than 3 sentences
-- [ ] **Search the entire draft for em dashes and replace every one**
-- [ ] Check for banned patterns (binary contrasts, imperative triads, etc.)
-- [ ] Verify emoji usage is limited to section headers and subject line only
-- [ ] Confirm section word counts match targets
-- [ ] Test the three reading speeds: scanner (30s), skimmer (3min), deep reader (7min)
-- [ ] **Link check: Every person, brand, or blog post mentioned must link out.** If Dani references something she wrote, link to the blog post. If a seller or business is named, link to their SendOwl seller story or their website. No naked name drops without a link.
+**Step 3: Build and preview**
+- [ ] Convert the Markdown draft into HTML with `public/newsletter-template.html`.
+- [ ] Save the working HTML in `examples/YYYY-MM-DD/`.
+- [ ] Run the Next.js preview app with `npm run dev`.
+- [ ] Preview the latest issue locally before moving it into Klaviyo.
 
-**Step 4: Build in Klaviyo**
-- [ ] Paste content into the HTML template
-- [ ] Upload images to Klaviyo's image library
-- [ ] Replace local image paths with Klaviyo hosted URLs
-- [ ] Set subject line with emoji
-- [ ] Preview on desktop and mobile
+**Step 4: Review**
+- [ ] Read every paragraph aloud. It should sound like a specific person, not a generic blog.
+- [ ] Check paragraph length: none longer than 3 sentences.
+- [ ] Search the entire draft for em dashes and replace every one.
+- [ ] Check banned patterns: binary contrasts, imperative triads, "let's dive in", "game-changer", and fake urgency.
+- [ ] Link every person, brand, seller story, blog post, and cited report.
+- [ ] Verify the scanner path: The Number, Quick Wins headlines, Link Stash, and The Closer.
 
-**Step 5: Pre-publish review**
-- [ ] Total HTML under 102KB
-- [ ] `{% unsubscribe %}` in footer
-- [ ] All images have alt text
-- [ ] All links are working
-- [ ] No em dashes in the final draft
-- [ ] Send test email to Gmail, Apple Mail, Outlook
-- [ ] The opening makes you want to keep reading
-- [ ] The closer is quotable
+**Step 5: Send in Klaviyo**
+- [ ] Copy the finished HTML from the saved file, or ask Claude Code to put it on your clipboard.
+- [ ] To copy from the terminal, run `npm run copy:newsletter -- examples/YYYY-MM-DD/newsletter-YYYY-MM-DD-final.html`.
+- [ ] Upload images to Klaviyo's image library.
+- [ ] Replace every local image path with the Klaviyo CDN URL.
+- [ ] Set subject line and preview text in campaign settings.
+- [ ] Confirm `{% unsubscribe %}` is present in the footer.
+- [ ] Send a test email and check desktop, mobile, Gmail, Apple Mail, and Outlook when possible.
+
+**Step 6: Archive**
+- [ ] Save the final sent HTML to `public/newsletters/newsletter-YYYY-MM-DD.html`.
+- [ ] Save drafts, checklists, and optimized source images to `examples/YYYY-MM-DD/`.
+- [ ] Run `npm run build` before handing off a repo change.
+
+### Common Mistakes Before Sending
+
+- **Image hosting:** Local paths like `images/photo.jpg` are fine for local preview only. Klaviyo sends should use Klaviyo-hosted image URLs.
+- **Unsubscribe tag:** `{% unsubscribe %}` must appear once in the footer or Klaviyo may block the send.
+- **Stale news:** Creator Economy News should be rechecked the week of send.
+- **Subject and preview text:** Set both in Klaviyo. Do not rely only on comments or hidden preheader HTML.
+- **Wrong byline:** Current default is the SendOwl team voice. Earlier Dani issues are voice references.
+- **Archive gap:** After sending, copy the final HTML into `public/newsletters/` so the next person can see exactly what shipped.
 
 ---
 
@@ -416,17 +428,17 @@ These patterns are instantly recognizable as AI-generated or generic content mar
 
 ---
 
-## 9. Working with Claude: Quick Reference
+## 9. Working with an AI Assistant: Quick Reference
 
-### Claude's Tendencies to Watch For
-- **Em dashes.** Claude loves em dashes. Search every draft for the em dash character and replace. This is the single most common fix.
-- **Hedging language.** Claude may soften Dani's voice with "it's worth considering" or "this could potentially." Cut these.
-- **Over-explaining.** Claude sometimes adds a sentence that restates the point. If the last sentence of a paragraph just rephrases the one before it, delete it.
-- **Binary contrasts.** "It's not about X, it's about Y" is Claude's favorite structure. Rewrite these.
-- **Generic closings.** If Claude ends a section with something vague, rewrite it with a specific statement.
+### Tendencies to Watch For
+- **Em dashes.** Search every draft for the em dash character and replace it. This is the single most common fix.
+- **Hedging language.** Cut phrases like "it's worth considering" or "this could potentially."
+- **Over-explaining.** If the last sentence of a paragraph just rephrases the one before it, delete it.
+- **Binary contrasts.** Rewrite "It's not about X, it's about Y" whenever it appears.
+- **Generic closings.** If a section ends with something vague, rewrite it with a specific statement.
 
 ### The Review Loop
-1. **Draft with Claude** using the section-specific prompts in this guide.
+1. **Draft with an AI assistant** using the section-specific prompts in this guide.
 2. **Read it aloud.** If it sounds like a blog, it needs another pass.
 3. **Search for em dashes** and replace every one.
 4. **Check each opening.** Does it start with a story or hook? Or a summary?
